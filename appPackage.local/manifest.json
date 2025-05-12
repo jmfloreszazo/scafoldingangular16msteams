@@ -27,8 +27,8 @@
     {  
       "entityId": "angularAppTab",  
       "name": "Angular App",  
-      "contentUrl": "https://localhost:4200/",  
-      "websiteUrl": "https://localhost:4200/",  
+      "contentUrl": "https://a933-92-172-156-108.ngrok-free.app/",  
+      "websiteUrl": "https://a933-92-172-156-108.ngrok-free.app/",  
       "scopes": ["personal"]  
     }  
   ],  
@@ -38,6 +38,6 @@
   ],
   "webApplicationInfo": {
     "id": "f7011066-94ee-41d7-afc4-f3045bedbedf",
-    "resource": "api://localhost:4200/f7011066-94ee-41d7-afc4-f3045bedbedf"
+    "resource": "api://a933-92-172-156-108.ngrok-free.app/f7011066-94ee-41d7-afc4-f3045bedbedf"
   }
 }
