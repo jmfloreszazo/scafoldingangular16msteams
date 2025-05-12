@@ -89,3 +89,6 @@ typings/
 
 # Angular Cache
 .angular
+
+# Dist folder
+.dist
