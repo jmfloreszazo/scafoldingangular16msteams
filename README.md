@@ -11,22 +11,35 @@ To use this application, you need an **Azure AD App Registration** configured as
 
 Additionally, you need to create an app in Microsoft Teams and configure it to load this Angular application.
 
+
+[Configuration of Azure Entra ID](assets/entraid.png)
+
+
+
+
+
 ---
 
 ## How to Run the Angular Application
 
-1. **Install Dependencies**: Run the following command in the project directory:
+1. **Install Angular CLI**: Run the following command to install the Angular CLI used in this project:
+```bash
+npm install --save-dev @angular/cli@16.2.16
+```
+Note: You can use newer versions of Angular CLI if needed, but this is the version used for this example.
+
+2. **Install Dependencies**: Run the following command in the project directory:
 ```bash
 npm install
 ```
 
-2. **Run the Application**: Start the Angular development server:
+3. **Run the Application**: Start the Angular development server:
 ```bash
 npm start
 ```
 By default, the app will be available at https://localhost:4200.
 
-3. **Expose the Application**: Use a tool like ngrok to expose your local server to the internet:
+4. **Expose the Application**: Use a tool like ngrok to expose your local server to the internet:
 ```bash
 ngrok http https://localhost:4200 --host-header=localhost
 ```
@@ -47,3 +60,12 @@ Update the contentUrl and websiteUrl fields with the public URL of your Angular 
 - Select the .zip file you created.
 
 4. **Test the App**: Add the app to a personal tab in Teams and verify it loads correctly.
+
+## Important Notes About SSL
+
+To use this application on the Microsoft Teams mobile app, you need a valid SSL certificate. Tools like ngrok provide temporary SSL certificates, but they are not recognized by the mobile app. You must host the application on a server with a trusted SSL certificate (e.g., using Azure App Service or another hosting provider).
+
+[View Test Image & SSL](assets/Test.png)
+
+## Disclaimer
+This application is intended for educational purposes and may require additional configuration for production use. Ensure you follow best practices for security and deployment when using this application in a real-world scenario.
