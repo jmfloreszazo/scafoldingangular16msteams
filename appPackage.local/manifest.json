@@ -1,0 +1,43 @@
+{  
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.10/MicrosoftTeams.schema.json",  
+  "manifestVersion": "1.10",  
+  "version": "2.0.4",  
+  "id": "22e3231f-45b7-4451-9bbf-7830ec6ee2bd",  
+  "packageName": "com.example.msteamsangularapp",  
+  "name": {  
+    "short": "GetMyTokenV2",  
+    "full": "Get my MS Teams user token"  
+  },  
+  "description": {  
+    "short": "An Angular application for MS Teams",  
+    "full": "This is a simple Angular application that loads in Microsoft Teams and retrieves the current user's token."  
+  },  
+  "icons": {  
+    "outline": "outline.png",  
+    "color": "color.png"  
+  },  
+  "developer": {  
+    "name": "Jose Maria Flores Zazo",  
+    "websiteUrl": "https://jmfloreszazo.com",  
+    "privacyUrl": "https://jmfloreszazo.com",  
+    "termsOfUseUrl": "https://jmfloreszazo.com"  
+  },  
+  "accentColor": "#FFFFFF",  
+  "staticTabs": [  
+    {  
+      "entityId": "angularAppTab",  
+      "name": "Angular App",  
+      "contentUrl": "https://localhost:4200/",  
+      "websiteUrl": "https://localhost:4200/",  
+      "scopes": ["personal"]  
+    }  
+  ],  
+  "permissions": [],  
+  "validDomains": [  
+    "localhost"  
+  ],
+  "webApplicationInfo": {
+    "id": "f7011066-94ee-41d7-afc4-f3045bedbedf",
+    "resource": "api://localhost:4200/f7011066-94ee-41d7-afc4-f3045bedbedf"
+  }
+}
